@@ -84,7 +84,7 @@ struct SubscriptionAddView: View {
                 if filterViewIsExpanded {
                     Divider()
                     ScrollView {
-                        ForEach(0..<TSMGConstants.regionTypeLists.count){index in
+                        ForEach(0..<TSMGConstants.regionTypeLists.count,id:\.self){index in
                             HStack{
                                 let type = TSMGConstants.regionTypeLists[index]
                                 if type == regionName {

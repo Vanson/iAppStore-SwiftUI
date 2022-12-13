@@ -62,7 +62,7 @@ struct SettingItemCell: View {
     
         if index == 0 {
             DisclosureGroup(title, isExpanded: $iconViewIsExpanded) {
-                ForEach(0..<icons.count){ index in
+                ForEach(0..<icons.count,id:\.self){ index in
                     let type = icons[index]
                     VStack{
                         HStack {
